@@ -59,15 +59,19 @@
         <fieldset>
             <legend>Payment Details</legend>
             <label for="cardNumber"> Card Number</label>
-            <input type="text" id="cardNumber" name="cardNumber" placeholder="enter card number" pattern="[0-9]+" minlength="13" maxlength="19" required>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="enter card number" pattern="[0-9]+"
+                minlength="13" maxlength="19" required>
+            <br>
             <label for="date">Expiry Date </label>
-            <input type="month" id="date" name="date" min="2026-10"  required>
+            <input type="month" id="date" name="date" min="2026-10" required>
+            <br>
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" minlength="3" maxlength="4" required>
 
         </fieldset>
         <br>
-        <fieldset>
-            <legend>Agreements</legend>
-        </fieldset>
+        <button type="submit">send</button>
+
 
     </form>
 
